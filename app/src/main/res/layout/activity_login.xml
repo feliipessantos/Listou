@@ -51,15 +51,18 @@
                 android:hint="@string/email"
                 android:textColorHint="@color/blue"
                 app:boxStrokeColor="@color/blue"
-                app:boxStrokeErrorColor="@color/red"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
                 app:helperTextTextColor="@color/red"
-                app:hintTextColor="@color/blue">
+                app:hintTextColor="@color/blue"
+                app:helperTextTextAppearance="@color/red">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,17 +76,19 @@
                 android:hint="@string/password"
                 android:textColorHint="@color/blue"
                 app:boxStrokeColor="@color/blue"
-                app:boxStrokeErrorColor="@color/red"
                 app:boxStrokeWidth="1dp"
                 app:boxStrokeWidthFocused="2dp"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/blue"
                 app:helperTextEnabled="false"
-                app:hintTextColor="@color/blue">
+                app:hintTextColor="@color/blue"
+                app:helperTextTextColor="@color/red">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputPass"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -175,8 +180,11 @@
                 app:hintTextColor="@color/blue">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputRegisterName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="text"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -197,8 +205,11 @@
                 app:hintTextColor="@color/blue">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputRegisterEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -218,11 +229,15 @@
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/blue"
                 app:helperTextEnabled="false"
-                app:hintTextColor="@color/blue">
+                app:hintTextColor="@color/blue"
+                app:helperTextTextColor="@color/red"
+                app:counterEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TextInputRegisterPass"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
