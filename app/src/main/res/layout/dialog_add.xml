@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btNewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/underline_bt_add"
+            android:padding="10dp"
+            android:text="@string/new_list"
+            android:textColor="@color/purple"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/btAddExist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:padding="10dp"
+            android:text="@string/add_exist_list"
+            android:textColor="@color/purple"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewNewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputTaskLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/purple"
+            app:boxBackgroundColor="@color/primary"
+            app:boxStrokeColor="@color/purple"
+            app:endIconDrawable="@drawable/ic_done"
+            app:endIconMode="custom"
+            app:endIconTint="@color/purple"
+            app:hintTextColor="@color/purple"
+            app:startIconDrawable="@drawable/ic_box"
+            app:startIconTint="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Item"
+                android:textColor="@color/purple"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ListView
+            android:id="@+id/ListViewTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btAddItemList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="@string/add_item"
+            android:textAllCaps="false"
+            android:textColor="@color/purple"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@color/purple" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/done" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewExistList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/purple"
+            app:boxBackgroundColor="@color/primary"
+            app:startIconDrawable="@drawable/ic_paste"
+            app:startIconTint="@color/purple"
+            app:boxStrokeColor="@color/purple"
+            app:hintTextColor="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                android:hint="@string/paste_code" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/done" />
+
+    </LinearLayout>
+
+</LinearLayout>

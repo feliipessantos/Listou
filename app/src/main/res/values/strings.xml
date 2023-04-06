@@ -9,4 +9,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="listou">Listou</string>
     <string name="name">Name</string>
+    <string name="new_list">New List</string>
+    <string name="add_exist_list">Add exist list</string>
+    <string name="Item">Item</string>
+    <string name="add_item">Add item</string>
+    <string name="done">Done</string>
+    <string name="paste_code">Paste a code here</string>
 </resources>
